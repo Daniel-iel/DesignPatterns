@@ -2,7 +2,7 @@
 {
     public class Context
     {
-        private IOperation operation;
+        private readonly IOperation operation;
 
         public Context(IOperation operation)
         {

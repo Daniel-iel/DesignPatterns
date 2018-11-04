@@ -72,9 +72,9 @@ namespace _1_Decorator
 
     public abstract class ConectionValidate : IConnect
     {
-        private readonly IConnect otherConnection;
+        readonly IConnect otherConnection;
 
-        public ConectionValidate(IConnect otherConnection)
+        protected ConectionValidate(IConnect otherConnection)
         {
             this.otherConnection = otherConnection;
         }
