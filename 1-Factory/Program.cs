@@ -7,6 +7,7 @@ namespace _1_Factory
         static void Main(string[] args)
         {
             var connectionFactory = new ConnectionFactory();
+
             var sqlConnection = connectionFactory.Initialize(EConnection.SQL);
             sqlConnection.Connect();
 
